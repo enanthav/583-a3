@@ -2,6 +2,25 @@ body {
     position: relative;
 }
 
+/* sottolineati grigi  */
+.section h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-weight: normal;
+    margin-top: 3px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    line-height:38px;
+
+}
+
+.section h3 mark{
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 2px; !important
+}
+
 /* GRAPH 06 ALLUVIAL DIRECT CARE AREA */
 .G06gruppi{
     font-size:14px;
