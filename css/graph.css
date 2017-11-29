@@ -1,6 +1,9 @@
 body {
     position: relative;
+    font-family: 'Open Sans', sans-serif;
 }
+
+
 /* Navigation bar */
 .container-navbar{
     padding: 8px;
