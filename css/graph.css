@@ -2,6 +2,15 @@ body {
     position: relative;
     font-family: 'Open Sans', sans-serif;
 }
+.tooltip {
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    background: black;
+    pointer-events: none;
+    color: #eeeeee;
+    padding: 5px;
+}
 
 
 /* Navigation bar */

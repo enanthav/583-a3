@@ -62,14 +62,6 @@ $("#btn06NS").click(function(){
     $('#G06nodeNS').addClass( "G06on" );
 });
 
-$("#btn06BC").click(function(){
-    $(".G06grouprect").removeClass( "G06recton" );
-    $("#G06grouprectBC").addClass( "G06recton" );
-    $(".G06alluvial").removeClass( "idle" );
-    $(this).addClass( "idle" );
-    $('.G06flow').removeClass( "G06on" );
-    $('#G06nodeBC').addClass( "G06on" );
-});
 
 $("#btn06ON").click(function(){
     $(".G06grouprect").removeClass( "G06recton" );
