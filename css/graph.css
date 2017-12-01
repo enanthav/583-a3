@@ -105,7 +105,7 @@ body {
     font-weight: 100;
 }
 /* GRAPH 06 ALLUVIAL DIRECT CARE AREA */
-.G06gruppi{
+.G06alluvial{
     font-size:14px;
     /*fill:#1A1A1A;*/
     font-family:'Inconsolata';
@@ -113,16 +113,16 @@ body {
     font-weight: 100;
 }
 
-.G06gruppi:hover {
+.G06alluvial:hover {
     font-weight: bold;
 }
 
-.G06gruppi.idle {
+.G06alluvial.idle {
     fill:#000000;
     font-weight: bold;
 }
 
-.G06flussi {
+.G06flow {
     opacity: 0.05;
     -webkit-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
