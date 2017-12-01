@@ -113,6 +113,10 @@ body {
     font-weight: 100;
 }
 
+.G06gruppi:hover {
+    font-weight: bold;
+}
+
 .G06gruppi.idle {
     fill:#000000;
     font-weight: bold;
