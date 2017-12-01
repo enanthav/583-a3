@@ -2,15 +2,6 @@ body {
     position: relative;
     font-family: 'Open Sans', sans-serif;
 }
-.tooltip {
-    position: absolute;
-    width: 150px;
-    height: 60px;
-    background: black;
-    pointer-events: none;
-    color: #eeeeee;
-    padding: 5px;
-}
 
 
 /* Navigation bar */
@@ -41,7 +32,7 @@ body {
     display: inline-block;
     float: none;
 }
-/* dispositivo piccolo */
+
 .navbar-toggle {
     color: white;
     font-family: 'Oswald', sans-serif;
@@ -109,7 +100,6 @@ body {
 /* GRAPH 05 GENDER HORIZONTAL BAR GRAPH */
 .G05year {
     font-size:14px;
-    /*fill:#1A1A1A;*/
     font-family:'Inconsolata';
     font-weight: 100;
 }
