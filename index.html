@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0059)http://labs.densitydesign.org/ddxii/es01/group04/index.html -->
+<!-- Visualizations and code based on http://labs.densitydesign.org/ddxii/es01/group04/index.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <!--
 Registered nurse wages data: https://www.jobbank.gc.ca/LMI_report_bynoc.do?noc=3012&reportOption=wage and https://www.cihi.ca/sites/default/files/document/rn-np-2016-data-tables-en-web.xlsx
@@ -9,7 +9,7 @@ Population data: http://www.statcan.gc.ca/tables-tableaux/sum-som/l01/cst01/demo
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Visualizing the Registered Nurse Workforce in Canada</title>
+    <title>Visualizing the Registered Nurse Work Force in Canada</title>
 
 
     <!-- CSS -->
@@ -38,19 +38,16 @@ Population data: http://www.statcan.gc.ca/tables-tableaux/sum-som/l01/cst01/demo
             <ul class="nav navbar-nav">
                 <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                 <li class="active">
-                    <a href="http://labs.densitydesign.org/ddxii/es01/group04/index.html#intro">data</a>
+                    <a href="#data">data</a>
                 </li>
                 <li class="">
-                    <a href="http://labs.densitydesign.org/ddxii/es01/group04/index.html#places">status</a>
+                    <a href="#status">status</a>
                 </li>
                 <li class="">
-                    <a href="http://labs.densitydesign.org/ddxii/es01/group04/index.html#groups">gender</a>
+                    <a href="#gender">gender</a>
                 </li>
                 <li class="">
-                    <a href="http://labs.densitydesign.org/ddxii/es01/group04/index.html#victims">population</a>
-                </li>
-                <li class="">
-                    <a href="http://labs.densitydesign.org/ddxii/es01/group04/index.html#media">media</a>
+                    <a href="#population">population</a>
                 </li>
             </ul>
 
@@ -65,18 +62,20 @@ Population data: http://www.statcan.gc.ca/tables-tableaux/sum-som/l01/cst01/demo
 
 
 
-<div id="nurses">
+<div id="data">
     <div class="container section" style="margin-bottom: 140px; margin-top: 100px;">
-        <div class="col-lg-offset-1 col-lg-5 col-md-offset-1 col-md-5 col-sm-offset-1 col-sm-5 col-xs-6">
+        <div class="col-lg-offset-1 col-lg-10 col-md-offset-1">
             <p class="col-lg-11 col-md-11" style="margin-top: 30px">
-            <h3><mark>Dataset</mark></h3>
-            Nurses are crucial members of the health care team.
+            <h3><mark>Data Set</mark></h3>
+            As front line workers, nurses are crucial members of the health care team. Visualizing this data enables us to see trends in ...
+            
+            RNs are trained to provide person-centred care for patients with the most complex needs, and evidence shows RN care reduces complications and deaths. So having fewer RNs means your safety is at risk.
         </p>
 
         </div>
         <div class="col-lg-11 col-md-11" style="margin-top: 60px">
         <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg"><g transform="translate(50,0)"><text x="-50" y="-7" style="font-size: 10px; font-family: 'Inconsolata';">null</text>
-            <g class="y axis" transform="translate(0,0)" style="font-size: 10px; font-family: Arial, Helvetica;"><g class="tick" transform="translate(0,150)" style="opacity: 1;">
+            <g class="y axis" transform="translate(0,0)" style="font-size: 10px; font-family: Inconsolata;"><g class="tick" transform="translate(0,150)" style="opacity: 1;">
                 <line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
                 <text dy=".32em" x="-9" y="0" style="text-anchor: end;">0</text></g><g class="tick" transform="translate(0,132.62511366071482)" style="opacity: 1;"><line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
                 <text dy=".32em" x="-9" y="0" style="text-anchor: end;">20,000</text></g>
@@ -121,11 +120,11 @@ Population data: http://www.statcan.gc.ca/tables-tableaux/sum-som/l01/cst01/demo
 
 
                 <div class="container section" style="margin-bottom: 140px; margin-top: 100px;">
-            <svg width="350" height="87.5" xmlns="http://www.w3.org/2000/svg"><g transform="translate(43.75,43.75)">
+<!--             <svg width="350" height="87.5" xmlns="http://www.w3.org/2000/svg"><g transform="translate(43.75,43.75)">
                 <g class="arc">
                     <path d="M-18.270003878827737,-34.17264195621433A38.75,38.75 0 0,1 -7.11825952004399e-15,-38.75L-4.362804221962445e-15,-23.75A23.75,23.75 0 0,0 -11.197744312829903,-20.944522489292652Z" style="fill: rgb(191, 105, 105);"></path></g><g class="arc"><path d="M2.3727531733479967e-15,-38.75A38.75,38.75 0 1,1 -18.270003878827737,-34.17264195621433L-11.197744312829903,-20.944522489292652A23.75,23.75 0 1,0 1.4542680739874819e-15,-23.75Z" style="fill: rgb(105, 191, 191);"></path></g><text transform="translate(-7.594629863889143,-30.31310108237894)" dy=".35em" style="text-anchor: middle; font-size: 10px; font-family: Arial, Helvetica; fill: rgb(66, 66, 66);">23,344</text>
                 <text transform="translate(7.594629863889139,30.31310108237894)" dy=".35em" style="text-anchor: middle; font-size: 10px; font-family: Arial, Helvetica; fill: rgb(66, 66, 66);">275,399</text>
-                <text y="48.75" style="text-anchor: middle; font-size: 11px; font-family: Arial, Helvetica;">2016</text></g></svg>
+                <text y="48.75" style="text-anchor: middle; font-size: 11px; font-family: Arial, Helvetica;">2016</text></g></svg> -->
                 </div>
     </div>
 </div>
@@ -133,14 +132,14 @@ Population data: http://www.statcan.gc.ca/tables-tableaux/sum-som/l01/cst01/demo
 </div>
 
 
-
-
-
-<div id="groups">
+		<!-- <div class="col-lg-offset-1 col-lg-5 col-md-offset-1 col-md-5 col-sm-offset-1 col-sm-5 col-xs-6"> -->
+<div id="status">
     <div class="container section" style="margin-bottom: 140px; margin-top: 100px;">
-        <div class="col-lg-offset-8 col-lg-4 col-md-offset-8 col-md-4 col-sm-offset-7 col-sm-5 col-xs-offset-6 col-xs-6" id="alluvial-gruppi">
+<!--         <div class="col-lg-offset-3 col-lg-4 col-md-offset-6 col-md-4 col-sm-offset-7 col-sm-5 col-xs-offset-6 col-xs-6" id="alluvial-gruppi"> -->
+		<div class="col-lg-offset-1 col-lg-10 col-md-offset-1">
+        <p style="margin-top: 0px">
             <h3><mark>Which direct care areas do nurses work in?</mark></h3>
-            <p>Ontario, Quebec, and British Columbia employ the most nurses in direct care. The flows’ dimensions refer to the number of nurses working in each direct care area.</p>
+            Goal: Compare direct care area of work that nurses are employed in, identifying differences in areas of employment between provinces.
             <h5><a href="https://figshare.com/s/c5e24495e3b3e72d1887" target="_blank">Datasource</a></h5>
         </div>
     <div class="col-lg-11 col-md-11" style="margin-top: 60px">
@@ -480,30 +479,174 @@ Population data: http://www.statcan.gc.ca/tables-tableaux/sum-som/l01/cst01/demo
     </div>
 
 
-
+	<div>
+	<svg width="900" height="600" xmlns="http://www.w3.org/2000/svg" transform="translate(100,0)">
+	<g transform="translate(100,0)">
+	<text x="-50" y="-7" style="font-size: 10px; font-family: Arial, Helvetica;">null</text>
+<g class="y axis" transform="translate(0,0)" style="font-size: 10px; font-family: Inconsolata;">
+<g class="tick" transform="translate(0,550)" style="opacity: 1;”>
+<line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".32em" x="-9" y="0" style="text-anchor: end;">0</text></g>
+<g class="tick" transform="translate(0,529.7645327446652)" style="opacity: 1;”>
+<line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".32em" x="-9" y="0" style="text-anchor: end;">50</text></g>
+<g class="tick" transform="translate(0,509.52906548933043)" style="opacity: 1;”>
+<line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".32em" x="-9" y="0" style="text-anchor: end;">100</text></g>
+<g class="tick" transform="translate(0,489.29359823399557)" style="opacity: 1;”>
+<line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".32em" x="-9" y="0" style="text-anchor: end;">150</text></g>
+<g class="tick" transform="translate(0,469.0581309786608)" style="opacity: 1;”>
+<line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".32em" x="-9" y="0" style="text-anchor: end;">200</text></g>
+<g class="tick" transform="translate(0,448.822663723326)" style="opacity: 1;”>
+<line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".32em" x="-9" y="0" style="text-anchor: end;">250</text></g>
+<g class="tick" transform="translate(0,428.58719646799113)" style="opacity: 1;”>
+<line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".32em" x="-9" y="0" style="text-anchor: end;">300</text></g>
+<g class="tick" transform="translate(0,408.3517292126563)" style="opacity: 1;”>
+<line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".32em" x="-9" y="0" style="text-anchor: end;">350</text></g>
+<g class="tick" transform="translate(0,388.11626195732157)" style="opacity: 1;”>
+<line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".32em" x="-9" y="0" style="text-anchor: end;">400</text></g>
+<g class="tick" transform="translate(0,367.88079470198676)" style="opacity: 1;”>
+<line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".32em" x="-9" y="0" style="text-anchor: end;">450</text></g>
+<g class="tick" transform="translate(0,347.64532744665195)" style="opacity: 1;”>
+<line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".32em" x="-9" y="0" style="text-anchor: end;">500</text></g>
+<g class="tick" transform="translate(0,327.40986019131714)" style="opacity: 1;”>
+<line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".32em" x="-9" y="0" style="text-anchor: end;">550</text></g>
+<g class="tick" transform="translate(0,307.1743929359823)" style="opacity: 1;”>
+<line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".32em" x="-9" y="0" style="text-anchor: end;">600</text></g>
+<g class="tick" transform="translate(0,286.9389256806475)" style="opacity: 1;”>
+<line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".32em" x="-9" y="0" style="text-anchor: end;">650</text></g>
+<g class="tick" transform="translate(0,266.7034584253127)" style="opacity: 1;”>
+<line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".32em" x="-9" y="0" style="text-anchor: end;">700</text></g>
+<g class="tick" transform="translate(0,246.4679911699779)" style="opacity: 1;”>
+<line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".32em" x="-9" y="0" style="text-anchor: end;">750</text></g>
+<g class="tick" transform="translate(0,226.23252391464314)" style="opacity: 1;”>
+<line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".32em" x="-9" y="0" style="text-anchor: end;">800</text></g>
+<g class="tick" transform="translate(0,205.9970566593083)" style="opacity: 1;”>
+<line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".32em" x="-9" y="0" style="text-anchor: end;">850</text></g>
+<g class="tick" transform="translate(0,185.7615894039735)" style="opacity: 1;”>
+<line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".32em" x="-9" y="0" style="text-anchor: end;">900</text></g>
+<g class="tick" transform="translate(0,165.5261221486387)" style="opacity: 1;”>
+<line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".32em" x="-9" y="0" style="text-anchor: end;">950</text></g>
+<g class="tick" transform="translate(0,145.2906548933039)" style="opacity: 1;”>
+<line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".32em" x="-9" y="0" style="text-anchor: end;">1,000</text></g>
+<g class="tick" transform="translate(0,125.05518763796913)" style="opacity: 1;”>
+<line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".32em" x="-9" y="0" style="text-anchor: end;">1,050</text></g>
+<g class="tick" transform="translate(0,104.8197203826343)" style="opacity: 1;”>
+<line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".32em" x="-9" y="0" style="text-anchor: end;">1,100</text></g>
+<g class="tick" transform="translate(0,84.58425312729946)" style="opacity: 1;”>
+<line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".32em" x="-9" y="0" style="text-anchor: end;">1,150</text></g>
+<g class="tick" transform="translate(0,64.34878587196471)" style="opacity: 1;”>
+<line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".32em" x="-9" y="0" style="text-anchor: end;">1,200</text></g>
+<g class="tick" transform="translate(0,44.113318616629876)" style="opacity: 1;”>
+<line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".32em" x="-9" y="0" style="text-anchor: end;">1,250</text></g>
+<g class="tick" transform="translate(0,23.87785136129505)" style="opacity: 1;”>
+<line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".32em" x="-9" y="0" style="text-anchor: end;">1,300</text></g>
+<g class="tick" transform="translate(0,3.6423841059602835)" style="opacity: 1;”>
+<line x2="-6" y2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".32em" x="-9" y="0" style="text-anchor: end;">1,350</text></g><path class="domain" d="M-6,0H0V550H-6" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></path></g><rect transform="translate(0,0)" class="bar" x="0" width="57" y="214.90066225165563" height="335.0993377483444" style="fill: rgb(191, 105, 105);"></rect>
+<rect transform="translate(0,0)" class="bar" x="63" width="57" y="0" height="550" style="fill: rgb(191, 148, 105);"></rect>
+<rect transform="translate(0,0)" class="bar" x="126" width="57" y="170.38263428991903" height="379.617365710081" style="fill: rgb(191, 191, 105);"></rect>
+<rect transform="translate(0,0)" class="bar" x="189" width="57" y="131.53053715967624" height="418.4694628403238" style="fill: rgb(148, 191, 105);"></rect>
+<rect transform="translate(0,0)" class="bar" x="252" width="57" y="88.22663723325975" height="461.77336276674026" style="fill: rgb(105, 191, 105);"></rect>
+<rect transform="translate(0,0)" class="bar" x="315" width="57" y="40.06622516556293" height="509.9337748344371" style="fill: rgb(105, 191, 148);"></rect>
+<rect transform="translate(0,0)" class="bar" x="378" width="57" y="155.4083885209713" height="394.5916114790287" style="fill: rgb(105, 191, 191);"></rect>
+<rect transform="translate(0,0)" class="bar" x="441" width="57" y="265.48933038999263" height="284.51066961000737" style="fill: rgb(105, 148, 191);"></rect>
+<rect transform="translate(0,0)" class="bar" x="504" width="57" y="133.55408388520974" height="416.4459161147903" style="fill: rgb(105, 105, 191);"></rect>
+<rect transform="translate(0,0)" class="bar" x="567" width="57" y="216.51949963208244" height="333.48050036791756" style="fill: rgb(148, 105, 191);"></rect>
+<rect transform="translate(0,0)" class="bar" x="630" width="57" y="181.30978660779988" height="368.6902133922001" style="fill: rgb(191, 105, 191);"></rect>
+<rect transform="translate(0,0)" class="bar" x="693" width="57" y="121.00809418690213" height="428.9919058130979" style="fill: rgb(191, 105, 148);"></rect></g>
+<g class="x axis" transform="translate(90,550)" style="font-size: 10px; font-family: Inconsolata;">
+<g class="tick" transform="translate(28.5,0)" style="opacity: 1;”>
+<line y2="6" x2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".71em" y="9" x="0" style="text-anchor: middle;">Alberta</text></g>
+<g class="tick" transform="translate(91.5,0)" style="opacity: 1;”>
+<line y2="6" x2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".71em" y="9" x="0" style="text-anchor: middle;">British Columbia</text></g>
+<g class="tick" transform="translate(154.5,0)" style="opacity: 1;”>
+<line y2="6" x2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".71em" y="9" x="0" style="text-anchor: middle;">Manitoba</text></g>
+<g class="tick" transform="translate(217.5,0)" style="opacity: 1;”>
+<line y2="6" x2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".71em" y="9" x="0" style="text-anchor: middle;">New Brunswick</text></g>
+<g class="tick" transform="translate(280.5,0)" style="opacity: 1;”>
+<line y2="6" x2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".71em" y="9" x="0" style="text-anchor: middle;">Newfoundland and Labrador</text></g>
+<g class="tick" transform="translate(343.5,0)" style="opacity: 1;”>
+<line y2="6" x2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".71em" y="9" x="0" style="text-anchor: middle;">Northwest Territories and Nunavut</text></g>
+<g class="tick" transform="translate(406.5,0)" style="opacity: 1;”>
+<line y2="6" x2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".71em" y="9" x="0" style="text-anchor: middle;">Nova Scotia</text></g>
+<g class="tick" transform="translate(469.5,0)" style="opacity: 1;”>
+<line y2="6" x2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".71em" y="9" x="0" style="text-anchor: middle;">Ontario</text></g>
+<g class="tick" transform="translate(532.5,0)" style="opacity: 1;”>
+<line y2="6" x2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".71em" y="9" x="0" style="text-anchor: middle;">Prince Edward Island</text></g>
+<g class="tick" transform="translate(595.5,0)" style="opacity: 1;”>
+<line y2="6" x2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".71em" y="9" x="0" style="text-anchor: middle;">Quebec</text></g>
+<g class="tick" transform="translate(658.5,0)" style="opacity: 1;”>
+<line y2="6" x2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".71em" y="9" x="0" style="text-anchor: middle;">Saskatchewan</text></g>
+<g class="tick" transform="translate(721.5,0)" style="opacity: 1;”>
+<line y2="6" x2="0" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></line>
+<text dy=".71em" y="9" x="0" style="text-anchor: middle;">Yukon</text></g><path class="domain" d="M0,6V0H750V6" style="shape-rendering: crispEdges; fill: none; stroke: rgb(204, 204, 204);"></path></g></svg>
+	
+			</div>
+</div>
 
 
     </div>
 
 
-<div id="victims">
-
+<div id="gender">
+	<div class="container section" style="margin-bottom: 140px; margin-top: 100px;">
+		<div class="col-lg-offset-1 col-lg-5 col-md-offset-1 col-md-5 col-sm-offset-1 col-sm-5 col-xs-6">
+		   <p class="col-lg-11 col-md-11" style="margin-top: 0px">
+		    <h3><mark>Gender Differences</mark></h3>
+			Although nursing remains a female dominated profession, the number of men entering the profession is increasing with every passing year.
+		</div>
         <!--<div id="contatore" class="col-lg-8 col-md-8 col-sm-8 col-xs-10" style="margin-top: 10px">-->
     <div class="col-lg-11 col-md-11" style="margin-top: 60px">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 971.2 520.8" style="enable-background:new 0 0 971.2 520.8;" xml:space="preserve">
-
-            <!--<svg width="400" height="500" xmlns="http://www.w3.org/2000/svg">-->
-                <g transform="translate(100,0)">
-                <text x="-42" y="43" class="G06gruppi">2007</text>
-                <text x="-42" y="80" class="G06gruppi" >2008</text>
-                <text x="-42" y="117" class="G06gruppi">2009</text>
-                <text x="-42" y="154" class="G06gruppi">2010</text>
-                <text x="-42" y="191" class="G06gruppi">2011</text>
-                <text x="-42" y="228" class="G06gruppi">2012</text>
-                <text x="-42" y="265" class="G06gruppi">2013</text>
-                <text x="-42" y="302" class="G06gruppi">2014</text>
-                <text x="-42" y="339" class="G06gruppi">2015</text>
-                <text x="-42" y="376" class="G06gruppi">2016</text>
+                <g transform="translate(500,0)">
+                <text x="-80" y="10" class="G05year">Male</text>
+                <text x="8" y="10" class="G05year" >Female</text>
+                <text x="-42" y="43" class="G05year">2007</text>
+                <text x="-42" y="80" class="G05year" >2008</text>
+                <text x="-42" y="117" class="G05year">2009</text>
+                <text x="-42" y="154" class="G05year">2010</text>
+                <text x="-42" y="191" class="G05year">2011</text>
+                <text x="-42" y="228" class="G05year">2012</text>
+                <text x="-42" y="265" class="G05year">2013</text>
+                <text x="-42" y="302" class="G05year">2014</text>
+                <text x="-42" y="339" class="G05year">2015</text>
+                <text x="-42" y="376" class="G05year">2016</text>
 
 
                 <rect transform="translate(0,30)" class="bar" y="1" height="15" x="3.7760485695300283" width="56.223951430469974" style="fill: rgb(148, 105, 191);"></rect>
