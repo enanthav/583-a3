@@ -35,7 +35,7 @@ body {
 
 .navbar-toggle {
     color: white;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-weight: normal;
     font-size: 18px;
 
@@ -78,10 +78,20 @@ body {
     }
 
 }
-
+/* Footer */
+.footer{
+    padding: 8px;
+    background-color: #42A48D;
+    color: white;
+    font-family: "inconsolata";
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+}
 /* Section headers  */
 .section h3{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Barlow Condensed', sans-serif;
     font-size: 20px;
     letter-spacing: 0.5px;
     font-weight: normal;
@@ -100,6 +110,11 @@ body {
 /* GRAPH 05 GENDER HORIZONTAL BAR GRAPH */
 .G05year {
     font-size:14px;
+    font-family:'Inconsolata';
+    font-weight: 100;
+}
+.G05percent {
+    font-size:12px;
     font-family:'Inconsolata';
     font-weight: 100;
 }
